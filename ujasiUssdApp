@@ -1,0 +1,283 @@
+<?php 
+
+$sessionId = $_POST["sessionId"];
+$serviceCode = $_POST["serviceCode"];
+$phoneNumber = $_POST["phoneNumber"];
+$text = $_POST["text"];
+
+$chaguo = explode('*', $text);
+$response = '';
+switch(@$chaguo[0]){	
+	case '1':
+		switch(@$chaguo[1]){
+			case '1':
+				switch(@$chaguo[2]){
+					case '1':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Vyakula Vyetu \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					case '2':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Vyakula Vyetu \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					case '3':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Vyakula Vyetu \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					case '4':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Vyakula Vyetu \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					default:
+						$response .= "CON Wapishi Ujasi \n";
+						$response .= "1. Mama Rajabu \n";
+						$response .= "2. Mama Bonge \n";
+						$response .= "3. Mama Mtumishi \n";
+						$response .= "4. Mama Swaumu \n";
+						break;
+				}
+				break;
+			case '2':
+				switch(@$chaguo[2]){
+					case '1':
+						
+						break;
+					default:
+						$response .= "CON Weka Bili \n";
+						$response .= "1. Siku \n";
+						$response .= "2. Wiki \n";
+						$response .= "3. Mwezi \n";
+						$response .= "4. ingiza tarehe(dd/mm/yyy) \n";
+						break;
+				}
+				break;
+			case '3':
+				switch(@$chaguo[2]){
+					case '1':
+						
+						break;
+					default:
+						$response .= "CON Kopa Ujasi \n";
+						$response .= "1. Thibitisha mkopo \n";
+						$response .= "2. Madeni yangu \n";
+						break;
+				}
+				break;
+			case '4':
+				switch(@$chaguo[2]){
+					case '1':
+						
+						break;
+					default:
+						$response .= "CON Huduma zingine \n";
+						$response .= "1. Mlipie Mwenzako \n";
+						$response .= "2. Maoni yangu \n";
+						break;
+				}
+				break;
+			case '5':
+				$response .= "END Kwa msaada zaidi wasiliana na Gaudence G. Mgunda, +255 718 652 059";
+				break;
+			default:
+				$response .= "CON Huduma zetu \n";
+				$response .= "1. Nunua Chakula \n";
+				$response .= "2. Weka Bili \n";
+				$response .= "3. Ujasi Mkopo \n";
+				$response .= "4. Huduma zingine \n";
+				$response .= "5. Msaada \n";
+				break;
+		}
+		break;
+	case '2':
+		switch(@$chaguo[1]){
+			case '1':
+				switch(@$chaguo[2]){
+					case '1':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Our Foods \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					case '2':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Our Foods \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					case '3':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Our Foods \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					case '4':
+						switch(@$chaguo[3]){
+							case '1':
+								break;
+							default:
+								$fetchVyakula = getVyakula($mjasi);
+									$x = count($fetchVyakula);
+									$response .= "CON Our Foods \n";
+									for($val = 0; $val < $x; $val++){
+										$option = $val + 1;
+										$response .= $option.".".$fetchVyakula[$val]."\n";
+									}
+								break;
+						}
+						break;
+					default:
+						$response .= "CON Ujasi Cookers \n";
+						$response .= "1. Mama Rajabu \n";
+						$response .= "2. Mama Bonge \n";
+						$response .= "3. Mama Mtumishi \n";
+						$response .= "4. Mama Swaumu \n";
+						break;
+				}
+				break;
+			case '2':
+				switch(@$chaguo[2]){
+					case '1':
+						
+						break;
+					default:
+						$response .= "CON Reserve Bill \n";
+						$response .= "1. Days \n";
+						$response .= "2. Weeks \n";
+						$response .= "3. Months \n";
+						$response .= "4. Enter Date(dd/mm/yyy) \n";
+						break;
+				}
+				break;
+			case '3':
+				switch(@$chaguo[2]){
+					case '1':
+						
+						break;
+					default:
+						$response .= "CON Ujasi PostPaid \n";
+						$response .= "1. Verify your PostPaid \n";
+						$response .= "2. My Debts \n";
+						break;
+				}
+				break;
+			case '4':
+				switch(@$chaguo[2]){
+					case '1':
+						if($chaguo[3]){
+							$response .= "CON Enter name of payee";
+						}else if($chaguo[4]){
+							$response .= "CON Enter amount(Tsh.)";
+						}else if($chaguo[5]){
+							$response .= "CON Enter your Tigopesa PIN";
+						}else if($chaguo[6]){
+							$response .= "END You have successfully pay for ";
+						}
+						break;
+					case '2':
+						if($chaguo[3]){
+							$response .= "CON Enter your suggestions";
+						}else if($chaguo[4]){
+							$response .= "END your suggestion has been sent.";
+						}
+						break;
+					default:
+						$response .= "CON Other Services \n";
+						$response .= "1. Pay For Others \n";
+						$response .= "2. My Suggestions \n";
+						break;
+				}
+				break;
+			case '5':
+				$response .= "END For further information contact Gaudence G. Mgunda, +255 718 652 059";
+				break;
+			default:
+				$response .= "CON Our Services \n";
+				$response .= "1. Buy Food \n";
+				$response .= "2. Reserve Bill \n";
+				$response .= "3. Ujasi PostPaid \n";
+				$response .= "4. Other Services \n";
+				$response .= "5. HelpDesk \n";
+				break;
+		}
+		break;
+	default:
+		$response .= "CON Ujasi Takeaway \n";
+		$response .= "1. Kiswahili \n";
+		$response .= "2. English \n";
+		break;
+}
+
+header('Content-type: text/plain');
+echo $response;
+?>
